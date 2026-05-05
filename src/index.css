@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #1C1B23;
+  --color-card: #252330;
+  --color-primary: #6366F1;
+  --color-surface-raised: #2D2B3B;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-slate-300 antialiased;
+  }
+}
+
+@layer utilities {
+  .glass-nav {
+    @apply bg-background/80 backdrop-blur-md border-b border-white/5;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
