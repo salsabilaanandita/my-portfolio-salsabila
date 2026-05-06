@@ -1,4 +1,11 @@
-// data/portfolio.js
+// // data/portfolio.js
+// import inventarisImg from '../assets/project/inventaris.png';
+import perpusImg from '../assets/project/perpus.png';
+import weatherImg from '../assets/project/weather.png';
+import ticketingImg from '../assets/project/ticketing.png';
+import inventariesImg from '../assets/project/inventaries.png';
+import webshopImg from '../assets/project/webshop.png';
+
 export const about = {
   name: "Salsabila Anandita Putri",
   title: "Front-End Developer",
@@ -40,7 +47,7 @@ export const projects = [
   year: "2024",
   tags: ["Web App", "Inventory", "CRUD"],
   stack: ["Laravel", "PHP", "MySQL", "Bootstrap"],
-  image: "assets/img/inventaris.png",
+  // image: inventarisImg,
   liveUrl: "#",
   githubUrl: "https://github.com/salsabilaanandita/inventaris-ukk.git",
   featured: true,
@@ -60,7 +67,7 @@ export const projects = [
     year: "2024",
     tags: ["Library", "Management", "Education"],
     stack: ["ReactJS", "JavaScript", "REST API", "Bootstrap", "MySQL"],
-    image: "assets/img/perpus.png",
+    image: perpusImg,
     liveUrl: "#",
     githubUrl: "https://github.com/salsabilaanandita/perpustakaan-react.git",
     featured: true,
@@ -80,7 +87,7 @@ export const projects = [
     year: "2024",
     tags: ["Weather", "API", "Mobile"],
     stack: ["ReactJS", "JavaScript", "Weather API", "CSS3", "Axios"],
-    image: "assets/img/weather.png",
+    image: weatherImg,
     liveUrl: "#",
     githubUrl: "https://github.com/salsabilaanandita/pendeteksi-cuaca.git",
     featured: true,
@@ -100,7 +107,7 @@ export const projects = [
     year: "2024",
     tags: ["Mobile", "Event", "Ticketing"],
     stack: ["Flutter", "Dart", "Firebase", "QR Code Generator", "Firebase Cloud Messaging"],
-    image: "assets/img/ticketing.png",
+    image: ticketingImg,
     liveUrl: "https://app-ticketing-salsabila.vercel.app/",
     githubUrl: "https://github.com/salsabilaanandita/ticketing-flutter.git",
     featured: false,
@@ -120,7 +127,7 @@ export const projects = [
     year: "2024",
     tags: ["Inventory", "Management", "Business"],
     stack: ["ReactJS", "JavaScript", "REST API", "Bootstrap", "Node.js"],
-    image: "assets/img/inventaries.png",
+    image: inventariesImg,
     liveUrl: "#",
     githubUrl: "https://github.com/salsabilaanandita/inventaries-project-react.git",
     featured: false,
@@ -140,7 +147,7 @@ export const projects = [
     year: "2023",
     tags: ["E-Commerce", "Shopping", "Web"],
     stack: ["HTML5", "CSS3", "JavaScript", "LocalStorage", "FontAwesome"],
-    image: "assets/img/webshop.png",
+    image: webshopImg,
     liveUrl: "#",
     githubUrl: "https://github.com/salsabilaanandita/webshop-app.git",
     featured: false,
