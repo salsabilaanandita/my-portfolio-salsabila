@@ -1,9 +1,9 @@
-// // data/portfolio.js
-// import inventarisImg from '../assets/project/inventaris.png';
+// data/portfolio.js
+import inventarisImg from '../assets/project/inventaris.png';
 import perpusImg from '../assets/project/perpus.png';
 import weatherImg from '../assets/project/weather.png';
 import ticketingImg from '../assets/project/ticketing.png';
-import inventariesImg from '../assets/project/inventaries.png';
+import inventariesImg from '../assets/project/kasir.png'; // Ini gambar untuk Kasir
 import webshopImg from '../assets/project/webshop.png';
 
 export const about = {
@@ -38,44 +38,44 @@ export const skills = [
 ];
 
 export const projects = [
-{
-  id: "inventaris-app",
-  title: "Inventaris App",
-  shortDesc: "Aplikasi manajemen inventaris untuk mengelola data barang, stok, dan transaksi.",
-  description: "Aplikasi manajemen inventaris yang dibuat menggunakan Laravel untuk membantu pengelolaan data barang, stok, serta transaksi masuk dan keluar. Dibangun dengan konsep CRUD yang terstruktur serta tampilan yang sederhana dan user-friendly.",
-  role: "Fullstack Developer",
-  year: "2024",
-  tags: ["Web App", "Inventory", "CRUD"],
-  stack: ["Laravel", "PHP", "MySQL", "Bootstrap"],
-  // image: inventarisImg,
-  liveUrl: "#",
-  githubUrl: "https://github.com/salsabilaanandita/inventaris-ukk.git",
-  featured: true,
-  highlights: [
-    "Membangun sistem CRUD untuk data barang",
-    "Manajemen stok barang masuk dan keluar",
-    "Fitur tambah, edit, hapus, dan detail data",
-    "Tampilan sederhana dan mudah digunakan",
-  ],
-},
   {
-    id: "aplikasi-perpustakaan",
-    title: "Aplikasi Perpustakaan",
-    shortDesc: "Manajemen perpustakaan digital untuk pencatatan buku, peminjaman, dan pengembalian.",
-    description: "Aplikasi manajemen perpustakaan digital berbasis web yang memudahkan pencatatan buku, peminjaman, pengembalian, dan pelacakan stok buku secara real-time.",
+    id: "inventaris-app",
+    title: "Inventaris App",
+    shortDesc: "Aplikasi manajemen inventaris untuk mengelola data barang, stok, dan transaksi.",
+    description: "Aplikasi manajemen inventaris yang dibuat menggunakan Laravel untuk membantu pengelolaan data barang, stok, serta transaksi masuk dan keluar. Dibangun dengan konsep CRUD yang terstruktur serta tampilan yang sederhana dan user-friendly.",
+    role: "Fullstack Developer",
+    year: "2024",
+    tags: ["Web App", "Inventory", "CRUD"],
+    stack: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+    image: inventarisImg,
+    liveUrl: "#",
+    githubUrl: "https://github.com/salsabilaanandita/inventaris-ukk.git",
+    featured: true, // Tampil di Home
+    highlights: [
+      "Membangun sistem CRUD untuk data barang",
+      "Manajemen stok barang masuk dan keluar",
+      "Fitur tambah, edit, hapus, dan detail data",
+      "Tampilan sederhana dan mudah digunakan",
+    ],
+  },
+  {
+    id: "aplikasi-kasir",
+    title: "Aplikasi Kasir ",
+    shortDesc: "Sistem Point of Sale untuk manajemen transaksi penjualan, stok barang, dan laporan laba.",
+    description: "Aplikasi Kasir berbasis web yang dibangun dengan Laravel untuk mengelola transaksi penjualan secara efisien. Dilengkapi dengan fitur manajemen stok otomatis, pencatatan kategori barang, dan pembuatan laporan penjualan harian maupun bulanan.",
     role: "Full Stack Developer",
     year: "2024",
-    tags: ["Library", "Management", "Education"],
-    stack: ["ReactJS", "JavaScript", "REST API", "Bootstrap", "MySQL"],
-    image: perpusImg,
+    tags: ["POS", "Management", "Business"],
+    stack: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+    image: inventariesImg, 
     liveUrl: "#",
-    githubUrl: "https://github.com/salsabilaanandita/perpustakaan-react.git",
-    featured: true,
+    githubUrl: "https://github.com/salsabilaanandita/inventaries-project-react.git",
+    featured: true, // Tampil di Home
     highlights: [
-      "Sistem pencatatan buku dan anggota perpustakaan",
-      "Fitur peminjaman dan pengembalian dengan due date",
-      "Laporan buku terpopuler dan statistik peminjaman",
-      "Dashboard admin untuk manajemen data",
+      "Sistem transaksi penjualan (Point of Sale) yang responsif",
+      "Manajemen inventaris barang dan kategori otomatis",
+      "Perhitungan total harga, diskon, dan kembalian",
+      "Generate laporan penjualan dan cetak struk",
     ],
   },
   {
@@ -90,12 +90,32 @@ export const projects = [
     image: weatherImg,
     liveUrl: "#",
     githubUrl: "https://github.com/salsabilaanandita/pendeteksi-cuaca.git",
-    featured: true,
+    featured: true, // Tampil di Home
     highlights: [
       "Integrasi API cuaca real-time (OpenWeather)",
       "Deteksi lokasi otomatis dengan geolocation",
       "Tampilan interaktif dengan animasi cuaca",
       "Responsive design untuk mobile & desktop",
+    ],
+  },
+  {
+    id: "aplikasi-perpustakaan",
+    title: "Aplikasi Perpustakaan",
+    shortDesc: "Manajemen perpustakaan digital untuk pencatatan buku, peminjaman, dan pengembalian.",
+    description: "Aplikasi manajemen perpustakaan digital berbasis web yang memudahkan pencatatan buku, peminjaman, pengembalian, dan pelacakan stok buku secara real-time.",
+    role: "Full Stack Developer",
+    year: "2024",
+    tags: ["Library", "Management", "Education"],
+    stack: ["ReactJS", "JavaScript", "REST API", "Bootstrap", "MySQL"],
+    image: perpusImg,
+    liveUrl: "#",
+    githubUrl: "https://github.com/salsabilaanandita/perpustakaan-react.git",
+    featured: false,
+    highlights: [
+      "Sistem pencatatan buku dan anggota perpustakaan",
+      "Fitur peminjaman dan pengembalian dengan due date",
+      "Laporan buku terpopuler dan statistik peminjaman",
+      "Dashboard admin untuk manajemen data",
     ],
   },
   {
@@ -116,26 +136,6 @@ export const projects = [
       "Validasi tiket menggunakan QR code scanner",
       "Notifikasi push real-time untuk pembelian tiket",
       "Firebase authentication dan realtime database",
-    ],
-  },
-  {
-    id: "aplikasi-inventaris",
-    title: "Aplikasi Inventaris",
-    shortDesc: "Aplikasi inventaris barang untuk pencatatan stok, mutasi, dan laporan barang.",
-    description: "Aplikasi inventaris barang berbasis web untuk pencatatan stok barang, mutasi barang masuk/keluar, serta generate laporan periodik untuk monitoring inventaris.",
-    role: "Full Stack Developer",
-    year: "2024",
-    tags: ["Inventory", "Management", "Business"],
-    stack: ["ReactJS", "JavaScript", "REST API", "Bootstrap", "Node.js"],
-    image: inventariesImg,
-    liveUrl: "#",
-    githubUrl: "https://github.com/salsabilaanandita/inventaries-project-react.git",
-    featured: false,
-    highlights: [
-      "CRUD data barang, kategori, dan supplier",
-      "Tracking mutasi barang masuk dan keluar",
-      "Generate laporan stok dan mutasi per periode",
-      "Low stock alert system",
     ],
   },
   {
@@ -160,4 +160,5 @@ export const projects = [
   },
 ];
 
+// Ini yang bikin cuma 3 proyek itu yang muncul di section "Featured"
 export const featuredProjects = projects.filter((p) => p.featured);

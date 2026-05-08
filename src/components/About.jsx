@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { FiUser, FiCalendar, FiMapPin, FiMail } from "react-icons/fi";
+import { FiUser, FiCalendar, FiMapPin, FiMail, FiBriefcase } from "react-icons/fi";
 import { about } from "../data/portfolio";
+import profileImage from '../assets/img/profile.jpg';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [imgError, setImgError] = useState(false);
   const ref = useRef(null);
 
   useEffect(() => {
@@ -31,6 +33,17 @@ const About = () => {
     { label: "Repositories", value: "12+" },
   ];
 
+  // Handle click untuk navigasi ke contact section
+  const handleOpenToWorkClick = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <section id="about" className="py-24 bg-[#0b0a10]">
       <div className="max-w-6xl mx-auto px-6">
@@ -52,13 +65,31 @@ const About = () => {
             <div className="space-y-8">
               <div className="relative w-fit">
                 <div className="w-48 h-48 rounded-2xl bg-gradient-to-br from-[#1a1926] to-[#12111a] border border-white/10 flex items-center justify-center overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-purple-500/20 to-purple-500/5 flex items-center justify-center">
-                    <FiUser className="w-20 h-20 text-purple-500/40" />
-                  </div>
+                  {!imgError ? (
+                    <img 
+                      src={profileImage} 
+                      alt="Salsabila Anandita Putri" 
+                      className="w-full h-full object-cover"
+                      onError={() => setImgError(true)}
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-purple-500/20 to-purple-500/5 flex items-center justify-center">
+                      <FiUser className="w-20 h-20 text-purple-500/40" />
+                    </div>
+                  )}
                 </div>
-                <div className="absolute -bottom-3 -right-3 px-3 py-1.5 bg-purple-600 rounded-lg shadow-lg">
-                  <span className="text-xs font-semibold text-white">Open to Work</span>
-                </div>
+                
+                {/* Open to Work Badge - Bisa diklik */}
+                <button
+                  onClick={handleOpenToWorkClick}
+                  className="absolute -bottom-3 -right-3 px-3 py-1.5 bg-indigo-600 rounded-lg shadow-lg hover:shadow-purple-500/25 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer group/badge"
+                  aria-label="Contact me for work opportunities"
+                >
+                  <span className="text-xs font-semibold text-white flex items-center gap-1">
+                    <FiBriefcase className="w-3 h-3" />
+                    Open to Work
+                  </span>
+                </button>
               </div>
 
               <div className="grid grid-cols-2 gap-4">

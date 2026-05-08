@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiArrowDown, FiGithub, FiLinkedin, FiInstagram, FiMapPin } from "react-icons/fi";
+import { FiArrowDown, FiGithub, FiLinkedin, FiInstagram, FiMapPin, FiFileText } from "react-icons/fi";
 import { about, socials } from "../data/portfolio";
 
 const iconMap = {
@@ -11,6 +11,14 @@ const iconMap = {
 const Hero = () => {
   const scrollToProjects = () => {
     document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  // Handle View CV - buka CV di tab baru
+  const handleViewCV = () => {
+    // Sesuaikan dengan nama file CV kamu
+    // Letakkan file CV di folder public/assets/cv/
+    const cvUrl = "/assets/cv/CV-SALSABILA-ANANDITA-PUTRI.pdf";
+    window.open(cvUrl, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -55,12 +63,16 @@ const Hero = () => {
         <div className="flex flex-wrap items-center gap-4 mb-12">
           <button 
             onClick={scrollToProjects}
-            className="bg-purple-600 hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-3 rounded-xl font-semibold text-sm transition-all duration-300 active:scale-95 shadow-lg shadow-purple-500/25"
+            className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-3 rounded-xl font-semibold text-sm transition-all duration-300 active:scale-95 shadow-lg shadow-purple-500/25"
           >
             View My Work
           </button>
-          <button className="bg-transparent border border-white/10 hover:border-purple-500 hover:text-purple-400 text-white px-8 py-3 rounded-xl font-semibold text-sm transition-all duration-300 active:scale-95">
-            Contact Me
+          <button 
+            onClick={handleViewCV}
+            className="bg-transparent border border-white/10 hover:border-purple-500 hover:text-purple-400 text-white px-8 py-3 rounded-xl font-semibold text-sm transition-all duration-300 active:scale-95 flex items-center gap-2"
+          >
+            <FiFileText className="w-4 h-4" />
+            View CV
           </button>
         </div>
 
