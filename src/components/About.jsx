@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FiUser, FiCalendar, FiMapPin, FiMail, FiBriefcase } from "react-icons/fi";
 import { about } from "../data/portfolio";
-import profileImage from '../assets/img/profile.jpg';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -67,8 +66,8 @@ const About = () => {
                 <div className="w-48 h-48 rounded-2xl bg-gradient-to-br from-[#1a1926] to-[#12111a] border border-white/10 flex items-center justify-center overflow-hidden">
                   {!imgError ? (
                     <img 
-                      src={profileImage} 
-                      alt="Salsabila Anandita Putri" 
+                      src="/profile.jpg" 
+                      alt="Salsabila"
                       className="w-full h-full object-cover"
                       onError={() => setImgError(true)}
                     />
