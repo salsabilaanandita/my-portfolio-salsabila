@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FiUser, FiCalendar, FiMapPin, FiMail, FiBriefcase } from "react-icons/fi";
 import { about } from "../data/portfolio";
-import profileImage from '../assets/img/profile.jpg';
+import profileImage from '../assets/project/profile.jpg';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
