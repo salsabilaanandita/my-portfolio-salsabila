@@ -63,7 +63,7 @@ const Hero = () => {
         <div className="flex flex-wrap items-center gap-4 mb-12">
           <button 
             onClick={scrollToProjects}
-            className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-3 rounded-xl font-semibold text-sm transition-all duration-300 active:scale-95 shadow-lg shadow-purple-500/25"
+            className="bg-indigo-600  hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-3 rounded-xl font-semibold text-sm transition-all duration-300 active:scale-95 shadow-lg shadow-purple-500/25"
           >
             View My Work
           </button>
