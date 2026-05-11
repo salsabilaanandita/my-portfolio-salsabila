@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiArrowDown, FiGithub, FiLinkedin, FiInstagram, FiMapPin, FiFileText } from "react-icons/fi";
 import { about, socials } from "../data/portfolio";
+import cvFile from "../assets/cv/cv-salsabila-anandita-putri.pdf"; // Import file CV
 
 const iconMap = {
   Github: FiGithub,
@@ -15,10 +16,7 @@ const Hero = () => {
 
   // Handle View CV - buka CV di tab baru
   const handleViewCV = () => {
-    // Sesuaikan dengan nama file CV kamu
-    // Letakkan file CV di folder public/assets/cv/
-    const cvUrl = "/assets/cv/CV-SALSABILA-ANANDITA-PUTRI.pdf";
-    window.open(cvUrl, '_blank', 'noopener,noreferrer');
+    window.open(cvFile, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -63,7 +61,7 @@ const Hero = () => {
         <div className="flex flex-wrap items-center gap-4 mb-12">
           <button 
             onClick={scrollToProjects}
-            className="bg-indigo-600  hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-3 rounded-xl font-semibold text-sm transition-all duration-300 active:scale-95 shadow-lg shadow-purple-500/25"
+            className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-xl font-semibold text-sm transition-all duration-300 active:scale-95 shadow-lg shadow-purple-500/25"
           >
             View My Work
           </button>
