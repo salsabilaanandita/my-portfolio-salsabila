@@ -26,7 +26,7 @@ const About = () => {
   }, []);
 
   const stats = [
-    { label: "Years Learning", value: "2+" },
+    { label: "Years Learning", value: "3+" },
     { label: "Projects Completed", value: "8+" },
     { label: "Fullstack Projects", value: "3+" },
     { label: "Repositories", value: "12+" },
@@ -134,7 +134,7 @@ const About = () => {
                   </div>
                   <div>
                     <span className="text-gray-500">Experience: </span>
-                    <span className="text-white font-medium">2+ years</span>
+                    <span className="text-white font-medium">6 Months</span>
                   </div>
                 </div>
               </div>
