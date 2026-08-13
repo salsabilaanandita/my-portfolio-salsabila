@@ -8,7 +8,7 @@ import {
   FiFileText
 } from "react-icons/fi";
 import { about, socials } from "../data/portfolio";
-import cvFile from "../assets/cv/cv-salsabila-anandita-putri.pdf";
+import cvFile from "../public/cv/Salsabila Anandita Putri.pdf";
 
 const iconMap = {
   Github: FiGithub,
