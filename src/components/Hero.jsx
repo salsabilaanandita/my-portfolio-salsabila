@@ -8,7 +8,7 @@ import {
   FiFileText
 } from "react-icons/fi";
 import { about, socials } from "../data/portfolio";
-import cvFile from "../public/cv/Salsabila Anandita Putri.pdf";
+
 
 const iconMap = {
   Github: FiGithub,
@@ -24,9 +24,9 @@ const Hero = () => {
   };
 
   // Buka CV di tab baru
-  const handleViewCV = () => {
-    window.open(cvFile, "_blank", "noopener,noreferrer");
-  };
+ const handleViewCV = () => {
+  window.open("/cv/Salsabila%20Anandita%20Putri.pdf", "_blank");
+};
 
   return (
     <section
