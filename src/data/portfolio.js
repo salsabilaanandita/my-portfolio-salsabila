@@ -8,9 +8,9 @@ import webshopImg from '../assets/project/webshop.png';
 
 export const about = {
   name: "Salsabila Anandita Putri",
-  title: "Front-End Developer",
-  tagline: "I build clean, fast & beautiful web experiences.",
-  bio: "Passionate about creating innovative web solutions with modern technologies. I bring ideas to life through clean code and stunning user experiences.",
+  title: "Web Developer",
+  tagline: "I build clean, functional & user-friendly web applications.",
+  bio: "Web Developer with experience in building responsive web applications and RESTful APIs using modern technologies. Experienced in both frontend and backend development, database management, and application deployment.",
   location: "Bogor, Indonesia",
   email: "salsabilaananditaputri@gmail.com",
   available: true,
@@ -25,7 +25,7 @@ export const socials = [
 export const skills = [
   {
     category: "Frontend",
-    items: ["React.js", "JavaScript", "Bootstrap", "Tailwind CSS", "Vue.js"],
+    items: ["Next.Js", "React.js", "JavaScript", "Bootstrap", "Tailwind CSS", "Vue.js"],
   },
   {
     category: "Backend",
