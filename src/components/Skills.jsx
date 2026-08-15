@@ -29,7 +29,7 @@ const Skills = () => {
     },
     {
       category: "Backend",
-      items: ["Express.Js", "Laravel", "PostgreSQL", "Lumen", "REST APIs", "MySql"],
+      items: ["Express.Js", "Laravel", "Golang","PostgreSQL", "Lumen", "REST APIs", "MySql"],
     },
     {
       category: "Tools & Others",

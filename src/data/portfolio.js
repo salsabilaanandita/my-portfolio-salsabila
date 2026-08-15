@@ -25,7 +25,7 @@ export const socials = [
 export const skills = [
   {
     category: "Frontend",
-    items: ["Next.Js", "React.js", "JavaScript", "Bootstrap", "Tailwind CSS", "Vue.js"],
+    items: ["Next.Js", "React.js", "Golang", "JavaScript", "Bootstrap", "Tailwind CSS", "Vue.js"],
   },
   {
     category: "Backend",
