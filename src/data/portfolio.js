@@ -29,7 +29,7 @@ export const skills = [
   },
   {
     category: "Backend",
-    items: ["Express", "Laravel", "PHP Codeinteger", "PostgreSQL", "Lumen", "REST APIs", "MySql", "MongoDB"],
+    items: ["Express", "Laravel", "Golang", "PostgreSQL", "Lumen", "REST APIs", "MySql", "MongoDB"],
   },
   {
     category: "Tools & Others",

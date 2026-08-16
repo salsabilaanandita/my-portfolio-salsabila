@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -59,7 +59,7 @@ const Skills = () => {
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {skills.map((group, gi) => (
+            {skills.map((group) => (
               <div
                 key={group.category}
                 className="group p-6 bg-gradient-to-br from-[#1a1926] to-[#12111a] border border-white/10 rounded-2xl hover:border-purple-500/40 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10"
