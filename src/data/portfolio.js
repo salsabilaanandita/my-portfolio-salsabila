@@ -5,6 +5,7 @@ import weatherImg from '../assets/project/weather.png';
 import ticketingImg from '../assets/project/ticketing.png';
 import inventariesImg from '../assets/project/kasir.png'; // Ini gambar untuk Kasir
 import webshopImg from '../assets/project/webshop.png';
+import moneyTrackerImg from '../assets/project/money-tracker.png';
 
 export const about = {
   name: "Salsabila Anandita Putri",
@@ -39,6 +40,26 @@ export const skills = [
 
 export const projects = [
   {
+    id: "money-tracker-app",
+    title: "Money Tracker App",
+    shortDesc: "Aplikasi pencatatan keuangan pribadi (personal finance) dengan dashboard analisis arus kas.",
+    description: "Aplikasi pencatatan keuangan pribadi (personal finance) berbasis web yang dirancang untuk melacak pemasukan, pengeluaran, wallet balance, budget bulanan, serta progres target tabungan secara real-time. Dilengkapi visualisasi grafik arus kas yang interaktif.",
+    role: "Full Stack Developer",
+    year: "2026",
+    tags: ["Personal Finance", "Management", "Dashboard"],
+    stack: ["Next.js", "Golang", "Tailwind", "PostgreSQL", "REST API"],
+    image: moneyTrackerImg,
+    liveUrl: "https://web-moneytracker.netlify.app/login",
+    githubUrl: "https://github.com/salsabilaanandita/money-tracker-app.git",
+    featured: true,
+    highlights: [
+      "Dashboard interaktif untuk memantau total saldo, pemasukan, dan pengeluaran",
+      "Visualisasi grafik (charts) arus kas harian, mingguan, dan bulanan",
+      "Pencatatan pengeluaran berdasarkan kategori tertentu",
+      "Pelacakan target tabungan dan dana darurat secara real-time",
+    ],
+  },
+  {
     id: "inventaris-app",
     title: "Inventaris App",
     shortDesc: "Aplikasi manajemen inventaris untuk mengelola data barang, stok, dan transaksi.",
@@ -67,7 +88,7 @@ export const projects = [
     year: "2026",
     tags: ["Management", "Business"],
     stack: ["Laravel", "PHP", "MySQL", "Tailwind"],
-    image: inventariesImg, 
+    image: inventariesImg,
     liveUrl: "#",
     githubUrl: "https://github.com/salsabilaanandita/inventaries-project-react.git",
     featured: true, // Tampil di Home
@@ -78,7 +99,7 @@ export const projects = [
       "Generate laporan penjualan dan cetak struk",
     ],
   },
-    {
+  {
     id: "aplikasi-perpustakaan",
     title: "Aplikasi Perpustakaan",
     shortDesc: "Manajemen perpustakaan digital untuk pencatatan buku, peminjaman, dan pengembalian.",
